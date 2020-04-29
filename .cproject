@@ -37,6 +37,7 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/gen/Drivers/CMSIS/Include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/gen/Drivers/STM32F0xx_HAL_Driver/Inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/gen/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../micro-utils/include&quot;"/>
 								</option>
 								<option id="gnu.c.compiler.option.dialect.std.826302789" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
@@ -94,6 +95,8 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/gen/Drivers/CMSIS/Include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/gen/Drivers/STM32F0xx_HAL_Driver/Inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/gen/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../micro-utils/include&quot;"/>
 								</option>
 								<option id="gnu.c.compiler.option.dialect.std.1365483957" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
 								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.123848876" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
@@ -106,6 +109,8 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/gen/Drivers/CMSIS/Include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/gen/Drivers/STM32F0xx_HAL_Driver/Inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/gen/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../micro-utils/include&quot;"/>
 								</option>
 								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.1773394806" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp"/>
 								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s.1217197112" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s"/>
