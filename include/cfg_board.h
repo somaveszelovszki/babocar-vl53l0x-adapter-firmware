@@ -13,16 +13,16 @@ extern "C" {
 
 extern I2C_HandleTypeDef  hi2c1;
 extern UART_HandleTypeDef huart1;
-extern TIM_HandleTypeDef htim1;
-
-#define i2c_Sensor              (&hi2c1)
-
-#define uart_PanelLink          (&huart1)
+extern TIM_HandleTypeDef  htim1;
 
 #define gpio_Led                GPIOA
 #define gpioPin_Led             GPIO_PIN_5
 
+#define i2c_Sensor              (&hi2c1)
+
 #define tim_System              (&htim1)
+
+#define uart_PanelLink          (&huart1)
 
 #define PANEL_VERSION           0x0c
 
