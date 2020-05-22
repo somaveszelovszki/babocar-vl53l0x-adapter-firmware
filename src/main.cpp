@@ -1,9 +1,10 @@
+#include <micro/debug/DebugLed.hpp>
 #include <micro/hw/VL53L1X_DistanceSensor.hpp>
 #include <micro/math/unit_utils.hpp>
 #include <micro/panel/DistSensorPanelData.hpp>
 #include <micro/utils/timer.hpp>
-#include <micro/port/task.hpp>
-#include <cfg_board.h>
+
+#include <cfg_board.hpp>
 
 using namespace micro;
 
@@ -19,7 +20,7 @@ void parseDistSensorPanelData(const DistSensorPanelInData& rxData) {
 }
 
 void fillDistSensorPanelData(DistSensorPanelOutData& txData) {
-    txData.distance_mm = static_cast<uint16_t>(static_cast<millimeter_t>(distance).get());
+    txData.distance_mm = micro::isinf(distance) ? 0xffffu : static_cast<uint16_t>(static_cast<millimeter_t>(distance).get());
 }
 
 } // namespace
@@ -27,7 +28,7 @@ void fillDistSensorPanelData(DistSensorPanelOutData& txData) {
 extern "C" void run(void) {
     sensor.initialize();
 
-    os_delay(50);
+    DebugLed debugLed(gpio_Led);
 
     DistSensorPanelInData rxData;
     DistSensorPanelOutData txData;
@@ -36,20 +37,18 @@ extern "C" void run(void) {
     bool isSensorOk = false;
 
     Timer sensorReadTimer(millisecond_t(10));
-    Timer ledBlinkTimer(millisecond_t(250));
 
     while (true) {
         panelLink.update();
 
         if (sensorReadTimer.checkTimeout()) {
-            if (isOk(sensor.readDistance(distance))) {
+            const meter_t dist = sensor.readDistance();
+            if (!micro::isinf(dist)) {
                 isSensorOk = true;
 
-                if (distance > centimeter_t(200)) {
-                    distance = micro::numeric_limits<meter_t>::infinity();
-                }
-
+                distance = dist < centimeter_t(200) ? dist : micro::numeric_limits<meter_t>::infinity();
                 prevReadTime = getTime();
+
             } else if (getTime() - prevReadTime > millisecond_t(100)) {
                 distance = meter_t(0);
                 isSensorOk = false;
@@ -67,10 +66,7 @@ extern "C" void run(void) {
             panelLink.send(txData);
         }
 
-        ledBlinkTimer.setPeriod(millisecond_t(isSensorOk && panelLink.isConnected() ? 500 : 250));
-        if (ledBlinkTimer.checkTimeout()) {
-            HAL_GPIO_TogglePin(gpio_Led, gpioPin_Led);
-        }
+        debugLed.update(isSensorOk && panelLink.isConnected());
     }
 }
 

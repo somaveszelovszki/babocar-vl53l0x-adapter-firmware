@@ -30,7 +30,6 @@
 									<listOptionValue builtIn="false" value="STM32F030x6"/>
 									<listOptionValue builtIn="false" value="STM32F030K6Tx"/>
 									<listOptionValue builtIn="false" value="DEBUG"/>
-									<listOptionValue builtIn="false" value="BSP_LIB_HAL"/>
 								</option>
 								<option id="gnu.c.compiler.option.include.paths.1249901720" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/gen/Inc&quot;"/>
@@ -55,7 +54,6 @@
 									<listOptionValue builtIn="false" value="STM32F030x6"/>
 									<listOptionValue builtIn="false" value="STM32F030K6Tx"/>
 									<listOptionValue builtIn="false" value="DEBUG"/>
-									<listOptionValue builtIn="false" value="BSP_LIB_HAL"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.include.paths.117456188" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/gen/Inc&quot;"/>
