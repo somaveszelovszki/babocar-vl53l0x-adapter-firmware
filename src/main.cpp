@@ -44,16 +44,14 @@ extern "C" void run(void) {
         if (sensorReadTimer.checkTimeout()) {
             const meter_t dist = sensor.readDistance();
             if (!micro::isinf(dist)) {
-                isSensorOk = true;
-
                 distance = dist < centimeter_t(200) ? dist : micro::numeric_limits<meter_t>::infinity();
+                isSensorOk = true;
                 prevReadTime = getTime();
 
             } else if (getTime() - prevReadTime > millisecond_t(100)) {
                 distance = meter_t(0);
                 isSensorOk = false;
                 prevReadTime = getTime();
-                // TODO
             }
         }
 
@@ -69,4 +67,3 @@ extern "C" void run(void) {
         debugLed.update(isSensorOk && panelLink.isConnected());
     }
 }
-

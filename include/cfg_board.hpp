@@ -5,8 +5,6 @@
 #include <micro/port/timer.hpp>
 #include <micro/port/uart.hpp>
 
-
-
 extern I2C_HandleTypeDef  hi2c1;
 extern TIM_HandleTypeDef  htim1;
 extern UART_HandleTypeDef huart1;
