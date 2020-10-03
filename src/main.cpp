@@ -36,7 +36,7 @@ extern "C" void run(void) {
     millisecond_t prevReadTime = getTime();
     bool isSensorOk = false;
 
-    Timer sensorReadTimer(millisecond_t(10));
+    Timer sensorReadTimer(millisecond_t(20));
 
     while (true) {
         panelLink.update();
