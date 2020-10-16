@@ -26,6 +26,7 @@
 								<option id="gnu.c.compiler.option.debugging.level.116758834" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1327194002" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="STM32"/>
+									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
 									<listOptionValue builtIn="false" value="STM32F0"/>
 									<listOptionValue builtIn="false" value="STM32F030x6"/>
 									<listOptionValue builtIn="false" value="STM32F030K6Tx"/>
@@ -50,6 +51,7 @@
 								<option id="gnu.cpp.compiler.option.debugging.level.1433213110" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.211296134" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="STM32"/>
+									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
 									<listOptionValue builtIn="false" value="STM32F0"/>
 									<listOptionValue builtIn="false" value="STM32F030x6"/>
 									<listOptionValue builtIn="false" value="STM32F030K6Tx"/>

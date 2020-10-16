@@ -18,3 +18,5 @@ extern UART_HandleTypeDef huart1;
 #define uart_PanelLink          micro::uart_t{ &huart1 }
 
 #define PANEL_VERSION           0x0c
+
+#define QUARTZ_FREQ             megahertz_t(8)
