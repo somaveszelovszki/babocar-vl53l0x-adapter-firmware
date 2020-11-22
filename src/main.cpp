@@ -67,3 +67,7 @@ extern "C" void run(void) {
         debugLed.update(isSensorOk && panelLink.isConnected());
     }
 }
+
+void micro_PanelLink_Uart_RxCpltCallback() {
+    panelLink.onNewRxData();
+}
