@@ -20,32 +20,32 @@
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.cdt.core.cnature</nature>
-		<nature>org.eclipse.cdt.core.ccnature</nature>
-		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+		<nature>com.st.stm32cube.ide.mcu.MCUSingleCpuProjectNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
-		<nature>fr.ac6.mcu.ide.core.MCUProjectNature</nature>
-		<nature>fr.ac6.mcu.ide.core.MCUSingleCoreProjectNature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>com.st.stm32cube.ide.mcu.MCUSW4STM32ConvertedProjectNature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 	</natures>
 	<linkedResources>
 		<link>
 			<name>micro-utils</name>
 			<type>2</type>
-			<location>/home/soma/work/catkin_ws/src/babocar/micro-utils</location>
+			<location>C:/home/soma/work/catkin_ws/src/babocar/micro-utils</location>
 		</link>
 		<link>
 			<name>micro-utils-src</name>
 			<type>2</type>
-			<location>/home/soma/work/catkin_ws/src/babocar/micro-utils/src</location>
+			<location>C:/home/soma/work/catkin_ws/src/babocar/micro-utils/src</location>
 		</link>
 		<link>
 			<name>micro-utils/src/vl53l0x-core</name>
 			<type>2</type>
-			<location>/home/soma/work/catkin_ws/src/babocar/micro-utils/Driver/VL53L1X/core</location>
+			<location>C:/home/soma/work/catkin_ws/src/babocar/micro-utils/Driver/VL53L1X/core</location>
 		</link>
 		<link>
 			<name>micro-utils/src/vl53l0x-platform</name>
 			<type>2</type>
-			<location>/home/soma/work/catkin_ws/src/babocar/micro-utils/Driver/VL53L1X/platform</location>
+			<location>C:/home/soma/work/catkin_ws/src/babocar/micro-utils/Driver/VL53L1X/platform</location>
 		</link>
 	</linkedResources>
 </projectDescription>
