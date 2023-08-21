@@ -38,14 +38,9 @@
 			<location>C:/home/soma/work/catkin_ws/src/babocar/micro-utils/src</location>
 		</link>
 		<link>
-			<name>micro-utils/src/vl53l0x-core</name>
+			<name>miro-utils-src</name>
 			<type>2</type>
-			<location>C:/home/soma/work/catkin_ws/src/babocar/micro-utils/Driver/VL53L1X/core</location>
-		</link>
-		<link>
-			<name>micro-utils/src/vl53l0x-platform</name>
-			<type>2</type>
-			<location>C:/home/soma/work/catkin_ws/src/babocar/micro-utils/Driver/VL53L1X/platform</location>
+			<location>C:/work/babocar/micro-utils/src</location>
 		</link>
 	</linkedResources>
 </projectDescription>
