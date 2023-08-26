@@ -30,17 +30,12 @@
 		<link>
 			<name>micro-utils</name>
 			<type>2</type>
-			<location>C:/home/soma/work/catkin_ws/src/babocar/micro-utils</location>
+			<locationURI>PARENT-2-PROJECT_LOC/micro-utils</locationURI>
 		</link>
 		<link>
 			<name>micro-utils-src</name>
 			<type>2</type>
-			<location>C:/home/soma/work/catkin_ws/src/babocar/micro-utils/src</location>
-		</link>
-		<link>
-			<name>miro-utils-src</name>
-			<type>2</type>
-			<location>C:/work/babocar/micro-utils/src</location>
+			<locationURI>PARENT-2-PROJECT_LOC/micro-utils/src</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
