@@ -191,7 +191,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="gen/Drivers/STM32F0xx_HAL_Driver/Src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="gen/Inc"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="gen/Src"/>
-						<entry excluding="bytes.cpp|CanManager.cpp|CarProps.cpp|DcMotor.cpp|Encoder.cpp|HC_SR04_Ultrasonic.cpp|HD44780_Lcd.cpp|json.cpp|linalg.cpp|Line.cpp|LinePattern.cpp|log.cpp|LSM6DSO_Gyroscope.cpp|lsm6dso_reg.c|MadgwickAHRS.cpp|MotorSimulator.cpp|MPU9250_Gyroscope.cpp|ParamManager.cpp|PID_Controller.cpp|port_hal_mock.cpp|port_os_freertos.cpp|random_generator.cpp|ServoMotor.cpp|str_utils.cpp|SystemManager.cpp|trajectory.cpp|vehicleCanTypes.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-utils-src"/>
+						<entry excluding="bytes.cpp|CanManager.cpp|CarProps.cpp|DcMotor.cpp|Encoder.cpp|HC_SR04_Ultrasonic.cpp|HD44780_Lcd.cpp|json.cpp|linalg.cpp|Line.cpp|LinePattern.cpp|log.cpp|LSM6DSO_Gyroscope.cpp|lsm6dso_reg.c|MadgwickAHRS.cpp|MotorSimulator.cpp|MPU9250_Gyroscope.cpp|ParamManager.cpp|PID_Controller.cpp|port_hal_mock.cpp|port_os_freertos.cpp|random_generator.cpp|ServoMotor.cpp|str_utils.cpp|TaskMonitor.cpp|trajectory.cpp|vehicleCanTypes.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-utils-src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="startup"/>
 					</sourceEntries>
